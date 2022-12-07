@@ -26,6 +26,7 @@ class StoreUserRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
+            'image_profile' =>  ['required', 'image', 'mimes:jpg,png,jpeg,gif,svg', 'max:8192'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ];

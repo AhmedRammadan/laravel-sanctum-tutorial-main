@@ -33,10 +33,13 @@ class AuthController extends Controller
     public function register(StoreUserRequest $request) 
     {
        $request->validated($request->only(['name', 'email', 'password']));
-       
+       $image_path = $request->file('image_profile')->store('image_profile', 'public');
+       //php artisan storage:link
+       //http://127.0.0.1:8000/storage/image_profile/2TKtGdH6vMUA60RKaCw69Sl1iZDd89ORSqJCeW8I.png
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'image_profile' => $image_path,
             'password' => Hash::make($request->password),
         ]);
 

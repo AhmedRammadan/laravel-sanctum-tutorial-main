@@ -35,10 +35,12 @@ class TasksController extends Controller
     public function store(StoreTaskRequest $request)
     {
         $request->validated();
+        $image_path = $request->file('image_tasks')->store('image_tasks', 'public');
 
         $task = Task::create([
             'user_id' => Auth::user()->id,
             'name' => $request->name,
+            "image_tasks" => $image_path,
             'description' => $request->description,
             'priority' => $request->priority
         ]);
@@ -54,7 +56,7 @@ class TasksController extends Controller
      */
     public function show(Task $task)
     {
-        return $this->isNotAuthorized($task) ? $this->isNotAuthorized($task) : new TasksResource($task);
+         return $this->isNotAuthorized($task) ? $this->isNotAuthorized($task) : new TasksResource($task);
     }
 
     /**

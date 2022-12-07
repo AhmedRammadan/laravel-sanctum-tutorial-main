@@ -26,7 +26,8 @@ class StoreTaskRequest extends FormRequest
         return [
             'name' => ['required', 'max:255'],
             'description' => ['required'],
-            'priority' => 'required'
+            'priority' => 'required',
+            'image_tasks' =>  ['required', 'image', 'mimes:jpg,png,jpeg,gif,svg', 'max:8192'],
         ];
     }
 }

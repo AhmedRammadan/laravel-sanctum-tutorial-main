@@ -14,10 +14,12 @@ class TasksResource extends JsonResource
      */
     public function toArray($request)
     {
+      $base_url =   Config('app.url');
         return [
             'id' => (string)$this->id,
             'attributes' => [
                 'name' => $this->name,
+                'image_tasks' => $base_url.'/storage/'.$this->image_tasks,
                 'description' => $this->description,
                 'priority' => $this->priority,
                 'created_at' => $this->created_at,

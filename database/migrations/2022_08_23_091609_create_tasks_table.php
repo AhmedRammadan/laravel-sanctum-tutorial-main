@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('name');
+            $table->string('image_tasks');
             $table->string('description');
             $table->string('priority')->default('normal');
             $table->foreign('user_id')

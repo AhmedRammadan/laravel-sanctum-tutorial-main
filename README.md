@@ -64,5 +64,24 @@ php artisan tinker
 1 - User::factory()->times(25)->create();
 2 - Task::factory()->times(250)->create();
 ```
+### read storage file
+```
+php artisan storage:link
+```
+
+### for Clear data
+
+```
+php artisan tinker   
+1 - php artisan cache:clear
+1 - php artisan view:clear
+1 - php artisan schedule:clear-cache
+1 - php artisan route:clear 
+1 - php artisan queue:clear 
+1 - php artisan optimize:clear
+1 - php artisan event:clear
+1 - php artisan config:clear
+1 - php artisan auth:clear-resets  
+```
 # Credits due where credits due…
 Thanks to [Laravel](https://laravel.com/) for giving me the opportunity to make this tutorial on [Laravel Sanctum](https://laravel.com/docs/9.x/sanctum). 

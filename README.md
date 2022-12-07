@@ -52,6 +52,17 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```
 php artisan migrate
 ```
+### get routes
 
+```
+php artisan route:list
+```
+
+### for data demo
+```
+php artisan tinker   
+1 - User::factory()->times(25)->create();
+2 - Task::factory()->times(250)->create();
+```
 # Credits due where credits due…
 Thanks to [Laravel](https://laravel.com/) for giving me the opportunity to make this tutorial on [Laravel Sanctum](https://laravel.com/docs/9.x/sanctum). 

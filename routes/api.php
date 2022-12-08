@@ -21,11 +21,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 // Public routes
-Route::post('/login', [AuthController::class, 'login']);
-Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login'])->middleware('is_verify_email');
 
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/postRegistration', [AuthController::class, 'postRegistration']);
+Route::get('account/verify/{token}', [AuthController::class, 'verifyAccount'])->name('user.verify');
 // Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::resource('/tasks', TasksController::class);
+    Route::post('/image', [ImageController::class, 'imageStore']);
 });

@@ -72,7 +72,7 @@ php artisan storage:link
 ### for Clear data
 
 ```
-php artisan tinker   
+---for all ----->  php artisan optimize:clear   
 1 - php artisan cache:clear
 1 - php artisan view:clear
 1 - php artisan schedule:clear-cache

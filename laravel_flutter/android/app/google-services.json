@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050448420383",
+    "project_id": "laravelflutter-e7baf",
+    "storage_bucket": "laravelflutter-e7baf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050448420383:android:fa39ae9b826afc4a82ff2a",
+        "android_client_info": {
+          "package_name": "com.example.laravel_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050448420383-uh2vroi0q8ffldclatpiu0615i11sb6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqbNPNYdJqBaUqB7m3m31WvrjtuPVIBOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050448420383-uh2vroi0q8ffldclatpiu0615i11sb6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

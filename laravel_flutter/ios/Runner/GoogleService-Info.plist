@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1050448420383-4j1ieiuj0b50gchljnv21k7vkv3bds33.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1050448420383-4j1ieiuj0b50gchljnv21k7vkv3bds33</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKjcOnHHNTklAs0kqAjGq7Y7W0EhV-Ucc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1050448420383</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.laravelFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>laravelflutter-e7baf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>laravelflutter-e7baf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1050448420383:ios:b8e31e0088f10c8582ff2a</string>
+</dict>
+</plist>

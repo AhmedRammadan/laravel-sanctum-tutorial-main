@@ -83,5 +83,14 @@ php artisan storage:link
 1 - php artisan config:clear
 1 - php artisan auth:clear-resets  
 ```
+### Create model with migration,controller,resource
+
+```
+-m, --migration Create a new migration file for the model.
+-c, --controller Create a new controller for the model.
+-r, --resource Indicates if the generated controller should be a resource controller
+
+php artisan make:model Notifications -mcr
+```
 # Credits due where credits due…
 Thanks to [Laravel](https://laravel.com/) for giving me the opportunity to make this tutorial on [Laravel Sanctum](https://laravel.com/docs/9.x/sanctum). 

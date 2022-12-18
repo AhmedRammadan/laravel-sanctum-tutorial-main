@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\NotificationsController;
 use App\Http\Controllers\TasksController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -30,5 +31,5 @@ Route::get('account/verify/{token}', [AuthController::class, 'verifyAccount'])->
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::resource('/tasks', TasksController::class);
-    Route::post('/image', [ImageController::class, 'imageStore']);
+    Route::resource('/notification', NotificationsController::class);
 });
